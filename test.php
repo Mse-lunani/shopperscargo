@@ -15,7 +15,7 @@ function verify_token($token){
         CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_CUSTOMREQUEST => 'POST',
-        CURLOPT_POSTFIELDS => array('secret' => '6LdIL3gpAAAAACmfxwqLhTVkXmc4DP--HSGzGsso','response' => $token),
+        CURLOPT_POSTFIELDS => array('secret' => 'your_secret','response' => $token),
     ));
 
     $response = curl_exec($curl);
