@@ -87,7 +87,7 @@ try {
 
     //Content
     $mail2->isHTML(true);                                  // Set email format to HTML
-    $mail2->Subject = 'Ticket no'.$ticket;
+    $mail2->Subject = 'New request';
     $mail2->Body    = 'name:'.$name.'<br>'.
     'phone:'.$phone.'<br>'.
     'url:'.$url.'<br>'.
